@@ -139,6 +139,7 @@ class _CameraPageState extends State<CameraPage> {
 
 class _SidePhotoButton extends StatelessWidget {
   final String? title;
+
   const _SidePhotoButton({
     Key? key,
     this.title,
@@ -175,6 +176,7 @@ class _SidePhotoButton extends StatelessWidget {
 class _CameraIconButton extends StatelessWidget {
   final IconData? icon;
   final String? title;
+
   const _CameraIconButton({
     Key? key,
     this.icon,

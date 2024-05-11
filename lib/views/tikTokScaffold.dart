@@ -66,9 +66,9 @@ class TikTokScaffold extends StatefulWidget {
     this.tabBar,
     this.leftPage,
     this.rightPage,
-    this.hasBottomPadding: false,
+    this.hasBottomPadding = false,
     this.page,
-    this.currentIndex: 0,
+    this.currentIndex = 0,
     this.enableGesture,
     this.onPullDownRefresh,
     this.controller,
@@ -86,6 +86,7 @@ class _TikTokScaffoldState extends State<TikTokScaffold>
   late Animation<double> animationY;
   double offsetX = 0.0;
   double offsetY = 0.0;
+
   // int currentIndex = 0;
   double inMiddle = 0;
 
@@ -340,11 +341,12 @@ class _MiddlePage extends StatelessWidget {
     this.onTopDrag,
     this.offsetX,
     this.offsetY,
-    this.isStack: false,
+    this.isStack = false,
     required this.header,
     required this.tabBar,
     this.page,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Widget tabBarContainer = tabBar ??
@@ -451,6 +453,7 @@ class _LeftPageTransform extends StatelessWidget {
 
   const _LeftPageTransform({Key? key, this.offsetX, this.content})
       : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;

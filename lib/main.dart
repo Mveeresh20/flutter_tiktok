@@ -29,14 +29,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         hintColor: Colors.white,
-        accentColor: Colors.white,
+        // accentColor: Colors.white,
         primaryColor: ColorPlate.orange,
-        primaryColorBrightness: Brightness.dark,
+        // primaryColorBrightness: Brightness.dark,
         scaffoldBackgroundColor: ColorPlate.back1,
         dialogBackgroundColor: ColorPlate.back2,
-        accentColorBrightness: Brightness.light,
+        // accentColorBrightness: Brightness.light,
         textTheme: TextTheme(
-          bodyText1: StandardTextStyle.normal,
+          bodyLarge: StandardTextStyle.normal,
         ),
       ),
       home: HomePage(),

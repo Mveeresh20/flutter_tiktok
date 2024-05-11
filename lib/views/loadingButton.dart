@@ -8,12 +8,12 @@ class AdMusicLoadingButton extends StatelessWidget {
     Key? key,
     required this.buttonText,
     this.onTap,
-    this.isLoading: false,
-    this.primary: true,
+    this.isLoading = false,
+    this.primary = true,
     this.margin,
     this.height,
     this.backgoundColor,
-    this.shadow: false,
+    this.shadow = false,
     this.textColor,
   }) : super(key: key);
 
@@ -26,6 +26,7 @@ class AdMusicLoadingButton extends StatelessWidget {
   final double? height;
   final Color? backgoundColor;
   final Color? textColor;
+
   @override
   Widget build(BuildContext context) {
     var body = Container(
