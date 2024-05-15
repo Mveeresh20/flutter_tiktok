@@ -1,7 +1,6 @@
 import 'package:flutter_tiktok/style/style.dart';
 import 'package:flutter/material.dart';
 
-
 class AdMucisText extends StatelessWidget {
   final String? text;
   final TextStyle? style;
@@ -13,7 +12,7 @@ class AdMucisText extends StatelessWidget {
     this.text,
     this.style,
     this.defaultStyle,
-    this.enableOffset: false,
+    this.enableOffset = false,
   }) : super(key: key);
 
   const AdMucisText.small(

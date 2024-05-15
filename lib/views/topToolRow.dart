@@ -5,12 +5,14 @@ class TopToolRow extends StatelessWidget {
   final Widget? right;
   final bool? canPop;
   final Function? onPop;
+
   const TopToolRow({
     Key? key,
     this.right,
     this.canPop,
     this.onPop,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     var popButton = canPop == true

@@ -9,13 +9,14 @@ class TikTokButtonColumn extends StatelessWidget {
   final Function? onComment;
   final Function? onShare;
   final Function? onAvatar;
+
   const TikTokButtonColumn({
     Key? key,
     this.bottomPadding,
     this.onFavorite,
     this.onComment,
     this.onShare,
-    this.isFavorite: false,
+    this.isFavorite = false,
     this.onAvatar,
   }) : super(key: key);
 
@@ -151,6 +152,7 @@ class IconToText extends StatelessWidget {
     this.size,
     this.color,
   }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Text(
@@ -170,6 +172,7 @@ class _IconButton extends StatelessWidget {
   final Widget? icon;
   final String? text;
   final Function? onTap;
+
   const _IconButton({
     Key? key,
     this.icon,

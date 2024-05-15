@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class SelectText extends StatelessWidget {
   const SelectText({
     Key? key,
-    this.isSelect: true,
+    this.isSelect = true,
     this.title,
   }) : super(key: key);
 

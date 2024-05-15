@@ -17,6 +17,7 @@ class FollowPage extends StatefulWidget {
 class _FollowPageState extends State<FollowPage> {
   Map<int, bool> fMap = {};
   int select = 0;
+
   @override
   Widget build(BuildContext context) {
     Widget head = TikTokSwitchAppbar(
@@ -87,7 +88,7 @@ class FollowRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget video = TikTokVideoPage(
-      // rightButtonColumn: true,
+      // rightButtonColumn= true,
       aspectRatio: 6.0 / 9,
       onAddFavorite: onAddFavorite,
       userInfoWidget: Container(),

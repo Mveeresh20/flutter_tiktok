@@ -1,4 +1,3 @@
-
 import 'package:flutter_tiktok/style/style.dart';
 import 'package:flutter_tiktok/views/selectText.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +21,7 @@ class TikTokTabBar extends StatelessWidget {
     this.onTabSwitch,
     this.current,
     this.onAddButton,
-    this.hasBackground: false,
+    this.hasBackground = false,
   }) : super(key: key);
 
   @override

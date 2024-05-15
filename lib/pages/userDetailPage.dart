@@ -3,8 +3,6 @@ import 'package:flutter_tiktok/views/tilTokAppBar.dart';
 import 'package:flutter/material.dart';
 import 'package:tapped/tapped.dart';
 
-
-
 class UserDetailPage extends StatefulWidget {
   @override
   _UserDetailPageState createState() => _UserDetailPageState();
@@ -126,6 +124,7 @@ class _UserInfoRow extends StatelessWidget {
     this.rightIcon,
     this.onTap,
   });
+
   final Widget? icon;
   final Widget? rightIcon;
   final String? title;

@@ -12,6 +12,7 @@ class MsgPage extends StatefulWidget {
 
 class _MsgPageState extends State<MsgPage> {
   int select = 0;
+
   @override
   Widget build(BuildContext context) {
     Widget head = TikTokSwitchAppbar(
@@ -216,7 +217,7 @@ class _TopIconTextButton extends StatelessWidget {
     this.icon,
     this.color,
     this.title,
-    this.color2: Colors.white,
+    this.color2 = Colors.white,
     this.onTap,
   }) : super(key: key);
 

@@ -7,11 +7,12 @@ class UserMsgRow extends StatelessWidget {
   final String? title;
   final String? desc;
   final bool reverse;
+
   const UserMsgRow({
     Key? key,
     this.title,
     this.desc,
-    this.reverse: false,
+    this.reverse = false,
     this.lead,
   }) : super(key: key);
 
@@ -49,7 +50,8 @@ class UserMsgRow extends StatelessWidget {
         child: lead ??
             ClipOval(
               child: Image.network(
-                "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif",fit: BoxFit.cover,
+                "https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif",
+                fit: BoxFit.cover,
               ),
             ),
       ),

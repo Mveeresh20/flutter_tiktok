@@ -17,6 +17,7 @@ class MsgDetailListPage extends StatefulWidget {
     this.msgDesc,
     this.reverse,
   }) : super(key: key);
+
   @override
   _MsgDetailListPageState createState() => _MsgDetailListPageState();
 }

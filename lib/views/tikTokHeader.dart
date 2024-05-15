@@ -5,6 +5,7 @@ import 'selectText.dart';
 
 class TikTokHeader extends StatefulWidget {
   final Function? onSearch;
+
   const TikTokHeader({
     Key? key,
     this.onSearch,
@@ -16,6 +17,7 @@ class TikTokHeader extends StatefulWidget {
 
 class _TikTokHeaderState extends State<TikTokHeader> {
   int currentSelect = 0;
+
   @override
   Widget build(BuildContext context) {
     List<String> list = ['推荐', '本地'];

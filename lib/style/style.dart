@@ -3,8 +3,10 @@ import 'package:flutter/rendering.dart';
 
 class SysSize {
   static const double avatar = 56;
+
   // static const double iconBig = 40;
   static const double iconNormal = 24;
+
   // static const double big = 18;
   // static const double normal = 16;
   // static const double small = 12;

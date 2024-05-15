@@ -100,7 +100,7 @@ class TikTokFavoriteAnimationIcon extends StatefulWidget {
     Key? key,
     this.onAnimationComplete,
     this.position,
-    this.size: 100,
+    this.size = 100,
   }) : super(key: key);
 
   @override
@@ -111,6 +111,7 @@ class TikTokFavoriteAnimationIcon extends StatefulWidget {
 class _TikTokFavoriteAnimationIconState
     extends State<TikTokFavoriteAnimationIcon> with TickerProviderStateMixin {
   AnimationController? _animationController;
+
   @override
   void dispose() {
     _animationController?.dispose();

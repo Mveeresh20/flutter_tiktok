@@ -12,7 +12,7 @@ class UserPage extends StatefulWidget {
 
   const UserPage({
     Key? key,
-    this.canPop: false,
+    this.canPop = false,
     this.onPop,
     required this.isSelfPage,
     this.onSwitch,
@@ -232,6 +232,7 @@ class _UserRightButton extends StatelessWidget {
 
 class _UserTag extends StatelessWidget {
   final String? tag;
+
   const _UserTag({
     Key? key,
     this.tag,
@@ -394,6 +395,7 @@ class _PointSelectTextButton extends StatelessWidget {
   final bool isSelect;
   final String title;
   final Function? onTap;
+
   const _PointSelectTextButton(
     this.isSelect,
     this.title, {
